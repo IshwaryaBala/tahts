@@ -167,16 +167,17 @@
   <!-- partial -->
 <!--Blog start  -->
 <div class="section section-padding">
-    <div class="container">
+    <div class="container-healthfair">
       <div class="text-center mt-3">
         <a href="slider.html">
           Show Slideshow
         </a>
     </div>
-      <div class="row" id="healthfair_2">
+    <div id="container1" class="container"></div>
+    <div id="container2" class="container"></div>
       </div>
       <!-- Pagination Start -->
-      <ul class="pagination mb-0">
+      <!-- <ul class="pagination mb-0">
         <li class="page-item"><a class="page-link" href="#"> <i class="far fa-chevron-left"></i> </a></li>
         <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
         <li class="page-item">
@@ -184,7 +185,7 @@
         </li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item"><a class="page-link" href="#"> <i class="far fa-chevron-right"></i> </a></li>
-      </ul>
+      </ul> -->
       <!-- Pagination End -->
     </div>
   </div>
@@ -232,26 +233,29 @@
 
 <script src="assets/js/main.js"></script>
 <!-- partial -->
-<script src="assets/js/main.js"></script>
 <!-- partial -->
 <!-- need to change the line 270 <div class="sigma_post-gallery"></div> -->
 <script>
-  let gallery = $('#healthfair_2')
-  for (let i = 1; i < 220; i++) {
-    let imageWrapper = $('<div>')
-    let imagePath = `assets/img/pictures/2019-day2/thumbs/${i}.jpg`
-    imageWrapper.attr('class', 'col-lg-3 col-md-4')
-    imageWrapper.html(
-      `<article class="sigma_post">
-      <div class="sigma_post-gallery">
-        <img src="${imagePath}" alt="post">
-      </div>
-    </article>`
-    )
-    gallery.append(imageWrapper);
-  }
-
+  const imageWrapperData = [
+      {
+          index: 1,
+          id: "container1",
+          imageCount: 219,
+          perPage: 24,
+          activePage: 1,
+          folderPath: `assets/img/pictures/2019-day2/thumbs/`
+      },
+      // {
+      //     index: 2,
+      //     id: "container2",
+      //     imageCount: 14,
+      //     perPage: 4,
+      //     activePage: 1,
+      //     folderPath: `assets/img/pictures/2019-day1/thumbs/`
+      // }
+  ];
 </script>
+<script src="assets/js/healthFair.js"></script>
 </body>
 
 </html>
