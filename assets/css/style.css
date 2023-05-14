@@ -1696,6 +1696,7 @@ blockquote::before{
     line-height: 1.2;
     margin-bottom: 15px;
     font-weight: 700;
+    color: #db4242;
 }
 
 .section-title {
@@ -10449,3 +10450,6 @@ small {
 /* .icon {
   font-size: 50px;
 } */
+
+
+/* header menu  */

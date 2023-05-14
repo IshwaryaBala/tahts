@@ -23,20 +23,19 @@
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
   <!-- Template Style sheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <!-- partial -->
 
 </head>
 
-<body>
+<body class="stretched side-push-panel">
 
   <!-- Preloader Start -->
   <div class="sigma_preloader">
     <img src="assets/img/om.svg" alt="preloader">
   </div>
   <!-- Preloader End -->
-  
-  <!-- partial:partia/__mobile-nav.html -->
   <aside class="sigma_aside sigma_aside-left">
 
     <a class="navbar-brand" href="index.html"style="height: 80px; width: 80px;"> <img src="assets/img/logo/tahts.png" alt="logo"> </a>
@@ -68,103 +67,122 @@
     </ul>
 
   </aside>
-  <div class="sigma_aside-overlay aside-trigger-left"></div>
-  <!-- partial -->
+  
+    <!-- Document Wrapper
+      ============================================= -->
+    <div id="wrapper" class="clearfix">
+  
+      <!-- Header
+        ============================================= -->
+      <header id="header" class="header-size-md" data-sticky-shrink="false">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row justify-content-between">
+  
+              <!-- Logo
+                ============================================= -->
+              <div id="logo" class="me-lg-0">
+                <a href="#" class="standard-logo">
+                  <img src="assets/img/logo/tahts.png" alt="Logo">
+                </a>
+              </div><!-- #logo end -->
+  
+              <div class="header-misc">
+  
+                <!-- Top Search
+                  ============================================= -->
+                  <div class="sigma_header-controls style-2">
 
-  <!-- partial:partia/__header.html -->
-  <header class="sigma_header header-3 can-sticky header-absolute">
-
-    <!-- Middle Header Start -->
-    <div class="sigma_header-middle">
-      <nav class="navbar">
-
-        <!-- Logo Start -->
-        <div class="sigma_logo-wrapper">
-          <a class="navbar-brand" href="index.html" style="height: 80px; width: 80px;">
-            <img src="assets/img/logo/tahts.png"  alt="logo">
-          </a>
-        </div>
-        <!-- Logo End -->
-
-        <!-- Menu -->
-        <div class="sigma_header-inner mt-3">
-          <div class="d-flex justify-content-center justify-content-lg-between">
-            <ul class="navbar-nav">
-              <li class="menu-item ">
-                <a href="index.html">Home Page</a>
-              </li>
-              <li class="menu-item ">
-                <a href="hinduFaith.html">Hindu Faith</a>
-              </li>
-              <li class="menu-item ">
-                <a href="about-us.html">About Us</a>
-              </li>
-              <li class="menu-item ">
-                <a href="community.html">Community Support Groups</a>
-              </li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#">Committees</a>
-                <ul class="sub-menu">
-                  <li class="menu-item"> <a href="hospitality.html">Hospitality Committee</a> </li>
-                  <li class="menu-item"> <a href="disasterRelief .html">Disaster Relief Committee</a> </li>
+                    <a href="donation.html" class="sigma_btn-custom"> Donate Here</a>
+                </div><!-- #top-search end -->
+  
+              </div>
+  
+              <div id="primary-menu-trigger">
+                <ul class="sigma_header-controls-inner">
+                  <!-- Mobile Toggler -->
+                  <li class="aside-toggler style-2 aside-trigger-left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </li>
                 </ul>
-              </li>
-              <li class="menu-item ">
-                <a href="contact-us.html">Contact Us</a>
-              </li>
-            </ul>
+              </div>
+  
+              <!-- Primary Navigation
+                ============================================= -->
+              <nav class="primary-menu with-arrows">
+  
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a href="index.html" class="menu-link" data-href="#section-services">
+                      <div>Home Page</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="hinduFaith.html" class="menu-link " data-href="#section-works">
+                      <div>Hindu Faith</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="about-us.html" class="menu-link " data-href="#section-about">
+                      <div>About Us</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="community.html" class="menu-link " data-href="#section-about">
+                      <div>Community Support Groups</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link" data-href="#section-about">
+                      <div>Committees</div>
+                    </a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item"><a class="menu-link" href="hospitality.html">
+                          <div>Hospitality Committee</div>
+                        </a></li>
+                      <li class="menu-item"><a class="menu-link" href="disasterRelief .html">
+                          <div>Disaster Relief Committee</div>
+                        </a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="contact-us.html" class="menu-link" data-href="#section-about">
+                      <div>Contact Us</div>
+                    </a>
+                  </li>
+                </ul>
+  
+              </nav><!-- #primary-menu end -->
+  
+            </div>
           </div>
         </div>
-
-        <!-- Controls -->
-        <div class="sigma_header-controls style-2">
-
-          <a href="donation.html" class="sigma_btn-custom"> Donate Here</a>
-
-          <ul class="sigma_header-controls-inner">
-            <!-- Mobile Toggler -->
-            <li class="aside-toggler style-2 aside-trigger-left">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </li>
-          </ul>
-
+        <div class="header-wrap-clone"></div>
+      </header><!-- #header end -->
+    </div>  
+      <!-- Slider
+        ============================================= -->
+      <section class="slider-element min-vh-50"
+        style="background:url(assets/img/banner/6.png) no-repeat center center / cover;">
+        <div class="slider-inner">
+          <div class="container">
+            <div class="sigma_subheader-inner">
+              <div class="sigma_subheader-text">
+                <h1 style="margin-top: 100px;">LOG IN</h1>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </nav>
-    </div>
-    <!-- Middle Header End -->
-
-  </header>
-  <!-- partial -->
-
-
-  <!-- partial:partia/__subheader.html -->
-  <div class="sigma_subheader dark-overlay dark-overlay-2" style="background-image: url(assets/img/banner/6.png)">
-
-    <div class="container">
-      <div class="sigma_subheader-inner">
-        <div class="sigma_subheader-text">
-          <h1>LOG IN</h1>
-        </div>
-        <!-- <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="btn-link" href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About Us</li>
-          </ol>
-        </nav> -->
-      </div>
-    </div>
-
-  </div>
-  <!-- partial -->
+      </section>
+  
  <!-- Contact form Start -->
  <div class="section mt-negative pt-0">
     <div class="sigma_subheader-inner">
